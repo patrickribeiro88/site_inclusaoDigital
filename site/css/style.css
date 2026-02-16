@@ -1,0 +1,275 @@
+/*===========================
+  Reset básico (remove margens e padding padrão)
+===========================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*===========================
+         Header
+===========================*/
+
+header {
+    background-color: #0073e6;
+    padding: 15px 0;   /* Espaçamento verticcal */
+}
+/*Container do header (centraliza e alinha os elementos)*/
+.container-header {
+    max-width: 1300px; /*lagura máxima*/
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /* Espaço entre logo e menu */
+}
+/*Logo*/
+.logo {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+/*Menu*/
+.menu {
+    display: flex;
+    list-style: none; /* Remove os marcadores da lista */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+.menu a {
+    color: #ffffff;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Efeito suave no hover */
+}
+.menu a:hover {
+    color: #78c850;
+}
+/*Botão de login*/
+.btn-login {
+    background-color: #78c850;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-login:hover {
+    background-color:#66b140;
+    color: #ffffff;
+}
+/*=========================
+    Hero Section
+===========================*/
+
+.hero{
+    background-color: #f2f2f2;
+    padding: 60px 20px; /* Espaçamento interno */
+}
+.hero-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px; /* Espaçamento entre texto e imagem */
+}
+.hero-text {
+    flex: 1; /* Ocupa metade do espaço*/
+}
+.hero-text h2 {
+    font-size: 2rem;
+    color:#0073e6;
+    margin-bottom: 20px;
+}
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #333;
+}
+.btn-hero {
+    display: inline-block;
+    background-color: #66b140;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none ;
+    font-weight: 600;
+    transform: background-color 0.3s ease;
+
+}
+.btn-hero:hover {
+    background-color: #66b140;
+}
+.hero-image{
+    flex: 1;
+}
+.hero-image img {
+    width:100%;
+    border-radius: 8px;
+}
+
+/*=========================
+    Seção Sobre 
+=========================*/
+
+.sobre {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.section-title {
+    font-size: 1.8rem;
+    color: #0073e6;
+    margin-bottom: 25px;
+}
+.section-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/*=========================
+    Seção Impactos (Cards)
+=========================*/
+.impactos {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os cards */
+    margin-top: 40px;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+}
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    width: 300px; /* Largura fixa para os cards */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+.card h3 {
+    color: #0073e6;
+    margin-bottom: 15px;
+}
+.card p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+/*=========================
+    Seção Multimídia
+=========================*/
+.multimidia {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+/*=========================
+    Footer
+=========================*/
+.footer {
+    background-color: #0073e6;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-section {
+    padding: 90px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background: #f4f6f9;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.erro {
+    color: red;
+    font-size: 0.8rem;
+    height: 16px;
+}
+
+.sucesso {
+    margin-top: 15px;
+    text-align: center;
+    color: green;
+}
+
+.btn-login-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-login-submit:hover {
+    background-color: #003f80;
+}
+
+/* =========================
+   BOAS VINDAS E LOGOUT
+========================= */
+
+.boas-vindas {
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}

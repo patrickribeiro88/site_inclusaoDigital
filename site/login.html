@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-header">
+            <h1 class="logo">Inclusão Digital</h1>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="acesso.html">Acesso à Internet</a></li>
+                    <li><a href="alfabetizacao.html">Alfabetização Digital</a></li>
+                    <li><a href="iniciativas.html">Iniciativas</a></li>
+
+                    <li id="itemLogin">
+                        <a href="login.html" class="btn-login">Login</a>
+                    </li>
+
+                    <li id="boasVindas" class="boas-vindas" style="display:none;"></li>
+
+                    <li id="itemLogout" style="display:none;">
+                        <a href="#" id="logoutBtn" class="btn-login">Logout</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="login-section">
+        <div class="login-container">
+
+            <h2>Área de Login</h2>
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail">
+                    <small class="erro"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+                    <small class="erro"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmarSenha">Confirmar Senha</label>
+                    <input type="password" id="confirmarSenha" placeholder="Confirme sua senha">
+                    <small class="erro"></small>
+                </div>
+
+                <button type="submit" class="btn-login-submit">Entrar</button>
+
+                <p id="mensagemSucesso" class="sucesso"></p>
+
+            </form>
+
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Projeto Acadêmico - Inclusão Digital. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/login.js"></script>
+    <script src="js/mensagem.js"></script>
+</body>
+
+</html>
