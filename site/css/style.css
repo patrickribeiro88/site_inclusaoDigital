@@ -1,5 +1,5 @@
 /*===========================
-  Reset básico (remove margens e padding padrão)
+  RESET BÁSICO (remove margens e padding padrão)
 ===========================*/
 *{
     margin: 0;
@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 /*===========================
-         Header
+         HEADER
 ===========================*/
 
 header {
@@ -59,7 +59,7 @@ header {
     color: #ffffff;
 }
 /*=========================
-    Hero Section
+    SEÇÃO HERO
 ===========================*/
 
 .hero{
@@ -111,7 +111,7 @@ header {
 }
 
 /*=========================
-    Seção Sobre 
+    SEÇÃO SOBRE
 =========================*/
 
 .sobre {
@@ -136,7 +136,7 @@ header {
 }
 
 /*=========================
-    Seção Impactos (Cards)
+    SEÇÃO IMPACTOS (CARDS)
 =========================*/
 .impactos {
     background-color: #f9f9f9;
@@ -144,8 +144,8 @@ header {
 }
 .cards {
     display: flex;
-    justify-content: center;
-    gap: 30px; /* Espaçamento entre os cards */
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre os cards */
     margin-top: 40px;
     flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
 }
@@ -170,7 +170,7 @@ header {
     line-height: 1.6;
 }
 /*=========================
-    Seção Multimídia
+    SEÇÃO MULTIMÍDIA
 =========================*/
 .multimidia {
     background-color: #ffffff;
@@ -193,7 +193,7 @@ header {
     border-radius: 8px;
 }
 /*=========================
-    Footer
+    FOOTER
 =========================*/
 .footer {
     background-color: #0073e6;
@@ -272,4 +272,54 @@ header {
     color: white;
     font-weight: bold;
     margin-left: 10px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/*Tablets */
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+/*Celulares */
+@media (max-width: 768px) {
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .hero-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+    .card {
+        width: 100%;
+    }
+    .login-container {
+        width: 90%;
+    }
 }
