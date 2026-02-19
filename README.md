@@ -27,29 +27,6 @@ Demonstrar, por meio de uma aplicação web, como a inclusão digital impacta a 
 
 ---
 
-## 📂 Estrutura do Projeto
-
-/site
-│
-├── index.html
-├── acesso.html
-├── alfabetizacao.html
-├── iniciativas.html
-├── login.html
-│
-├── css/
-│ └── style.css
-│
-├── js/
-│ ├── login.js
-│ └── mensagem.js
-│
-└── assets/
-└── img/
-
-
----
-
 ## 🔐 Funcionalidades Implementadas
 
 ### ✔ Navegação entre páginas
