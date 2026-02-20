@@ -83,9 +83,3 @@ O projeto demonstra a aplicação prática de conceitos de desenvolvimento web, 
 - Armazenamento local (LocalStorage)
 - Controle de estado de autenticação
 
----
-
-## 👨‍💻 Autor
-
-Patrick Ribeiro  
-Projeto Acadêmico – 2026
